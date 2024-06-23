@@ -21,16 +21,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/jsm-logo.png" sizes="any" />
       </head>
-      <body className={inter.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
